@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Nanum+Gothic&display=swap" rel="stylesheet">
     <title>Crea tu cuenta</title>
 
 </head>
@@ -23,18 +26,18 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="tucorreo@email.com" required><br>
                 <label for="phone">Teléfono:</label>
-                <input type="tel" id="phone" name="phone" placeholder="091234567" required><br>
+                <input type="tel" id="phone" name="phone" placeholder="091234567" minlength="9" maxlength="9" required><br>
                 <label for="passwd">Contraseña:</label>
                 <input type="password" id="passwd" name="passwd" required><br>
                 <label for="passwd2">Confirmar contraseña:</label>
                 <input type="password" id="passwd2" name="passwd2" required><br>
                 
-                <button type="button" class="botonCrear">Empezar a Jugar</button>
-            </form>
+                <button type="submit" class="botonCrear">Empezar a Jugar</button>
+              </form>
 
         </div>
     </div>
 
-    
+    <script src="app.js"></script>
 </body>
 </html>
