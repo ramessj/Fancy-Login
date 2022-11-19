@@ -172,3 +172,24 @@ input.error {
   margin: 0;
   padding: 0;
 }
+
+
+.textoDer{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.loggedIn{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #04aa6d;
+}
+
+.hidden{
+  display: none;
+}
+

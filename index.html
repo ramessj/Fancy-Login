@@ -17,9 +17,12 @@
     <div class="container">
       <div class="contIzquierda"></div>
       <div class="contDerecha">
-        <a class="crearCuentah1">Crear una cuenta</a>
-        <a class="crearCuentah2">Es gratis</a>
-        <form class="registro" id="registro">
+        <div class="textoDer" id="textoDer">
+            <a class="crearCuentah1">Crear una cuenta</a>
+            <a class="crearCuentah2">Es gratis</a>
+        </div>
+        
+        <form class="registro " id="registro">
           <label for="nombre">Nombre:</label>
           <input
             type="text"
@@ -75,8 +78,13 @@
             required
           /><small>Repite la contraseña</small><br />
 
-          <button type="submit" id="submit" class="botonCrear">Empezar a Jugar</button>
+          <button type="submit" id="submit" class="botonCrear" >Empezar a Jugar</button>
         </form>
+
+
+        <div class="loggedIn hidden" id="loggedIn">
+            
+        </div>
       </div>
 
       <div class="credits">
