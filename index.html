@@ -1,43 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
     <title>Crea tu cuenta</title>
-
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
-        <div class="contIzquierda"></div>
-        <div class="contDerecha">
-          <a class="crearCuentah1">Crear tu cuenta</a>
-            <form class="registro" id="registro">
-              
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Juan" required><br>
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" placeholder="Pérez" required><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="tucorreo@email.com" required><br>
-                <label for="phone">Teléfono:</label>
-                <input type="tel" id="phone" name="phone" placeholder="091234567" minlength="9" maxlength="9" required><br>
-                <label for="passwd">Contraseña:</label>
-                <input type="password" id="passwd" name="passwd" required><br>
-                <label for="passwd2">Confirmar contraseña:</label>
-                <input type="password" id="passwd2" name="passwd2" required><br>
-                
-                <button type="submit" class="botonCrear">Empezar a Jugar</button>
-              </form>
+      <div class="contIzquierda"></div>
+      <div class="contDerecha">
+        <a class="crearCuentah1">Crear una cuenta</a>
+        <a class="crearCuentah2">Es gratis</a>
+        <form class="registro" id="registro">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Juan"
+            required
+          /><br />
+          <label for="apellido">Apellido:</label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            placeholder="Pérez"
+            required
+          /><br />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tucorreo@email.com"
+            required
+          /><br />
+          <label for="phone">Teléfono:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="091234567"
+            minlength="9"
+            maxlength="9"
+            required
+          /><br />
+          <label for="passwd">Contraseña:</label>
+          <input
+            type="password"
+            id="passwd"
+            name="passwd"
+            minlength="7"
+            maxlength="15"
+            required
+          />
+          <small>7 a 15 caracteres</small>
+          <br />
+          <label for="passwd2">Confirmar contraseña:</label>
+          <input
+            type="password"
+            id="passwd2"
+            name="passwd2"
+            minlength="7"
+            maxlength="15"
+            required
+          /><small>Repite la contraseña</small><br />
 
-        </div>
+          <button type="submit" id="submit" class="botonCrear">Empezar a Jugar</button>
+        </form>
+      </div>
+
+      <div class="credits">
+        Foto de
+        <a
+          href="https://unsplash.com/@mauro_cenci?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          target="_blank"
+          >Mauro Cenci</a
+        >
+        en
+        <a
+          href="https://unsplash.com/es/t/3d-renders?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          target="_blank"
+          >Unsplash</a
+        >
+      </div>
+
+      <div class="footer">
+        <p>
+          Creado por
+          <a href="https://github.com/ramessj" target="_blank"
+            >Ramiro Quesada</a
+          >
+          • Hosteado en
+          <a href="https://github.com/ramessj/Game-Signup" target="_blank"
+            >GitHub</a
+          >
+        </p>
+      </div>
     </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

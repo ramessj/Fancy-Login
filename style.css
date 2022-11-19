@@ -2,9 +2,7 @@ body {
   /* background-color: rgba(16, 19, 21, 1) !important; */
   margin: 0;
   padding: 0;
-  font-family: 'Merriweather', serif;
-  
-
+  font-family: "Merriweather", serif;
 }
 
 .container {
@@ -12,19 +10,31 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  background: rgb(117,121,192);
-background: -moz-radial-gradient(circle, rgba(117,121,192,1) 0%, rgba(11,11,19,1) 100%);
-background: -webkit-radial-gradient(circle, rgba(117,121,192,1) 0%, rgba(11,11,19,1) 100%);
-background: radial-gradient(circle, rgba(117,121,192,1) 0%, rgba(11,11,19,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7579c0",endColorstr="#0b0b13",GradientType=1);
+  background: rgb(117, 121, 192);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(117, 121, 192, 1) 0%,
+    rgba(11, 11, 19, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(117, 121, 192, 1) 0%,
+    rgba(11, 11, 19, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(117, 121, 192, 1) 0%,
+    rgba(11, 11, 19, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7579c0",endColorstr="#0b0b13",GradientType=1);
 
   margin: 0;
   justify-content: center;
   color: #ddc4ce;
+  position: relative;
 }
 
 .contIzquierda {
-  
   background-image: url("./imgs/imgbg.jpg");
   background-position: center;
   background-size: cover;
@@ -33,22 +43,22 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7579c0",endCo
   border-radius: 360px;
   margin-right: 5vw;
   animation-name: floating;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes floating {
-
-  0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
-
-
-
-
 
 .contDerecha {
   width: 30vw;
@@ -58,72 +68,107 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7579c0",endCo
   padding: 25px;
   display: flex;
   flex-direction: column;
-  box-shadow:#ddc4ce;
+  box-shadow: #ddc4ce;
   align-items: center;
   box-shadow: 0 4px #999;
-  background-color: rgba(70,73,116,0.7)
+  background-color: rgba(70, 73, 116, 0.7);
 }
 
-.crearCuentah1{
-  
+.crearCuentah1 {
   font-weight: 600;
   font-size: 3rem;
 }
 
-.registro{
+.registro {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 100%;
   font-size: 1.25rem;
 
   flex-direction: column;
   width: 70%;
-}
-
-input{
-  font-size: 1.5rem;
-  border-radius: 10px;
   
 }
 
-
-input:focus{
+input {
   font-size: 1.5rem;
-  border-style: solid;
-  border:#4c00ff 5px;
- 
+  border-radius: 10px;
+  background-color: rgba(117, 121, 192, 0.5);
+  color: white;
+  
+}
+input::placeholder{
+  color:rgba(255, 255, 255, 0.432);
 }
 
+input:focus {
+  font-size: 1.5rem;
+  border-style: solid;
+  border: #4c00ff 5px;
+}
 
 input:valid {
   border: 2px solid #17d641;
 }
 
-input.error{
+input.error {
   border: 2px solid hsl(0, 73%, 45%);
 }
 
-.botonCrear{
-  
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 2rem;
-    box-shadow: 0 9px #999;
-    border-radius: 15px;
-  
+.botonCrear {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  box-shadow: 0 9px #999;
+  border-radius: 15px;
 }
 
-.botonCrear:hover{
+.botonCrear:hover {
   cursor: pointer;
-  background-color: #04AA6D;
+  background-color: #04aa6d;
 }
 
-.botonCrear:active{
+.botonCrear:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.credits {
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+  
+  font-size: 0.7rem;
+  color: #707070;
+}
+
+.credits a {
+  text-decoration: none ;
+  color: #707070;
+}
+
+
+.footer {
+  position: absolute;
+  font-family: "Helvetica Nenu", Hevetica, Arial, sans-serif;
+
+ 
+  font-size: 1rem;
+  color: #707070;
+  text-align: center;
+  
+  bottom: 0px;
+  
+}
+
+.footer a{
+  text-decoration: none;
+  color:#969595;
+  margin: 0;
+  padding: 0;
 }
