@@ -72,6 +72,7 @@ body {
   align-items: center;
   box-shadow: 0 4px #999;
   background-color: rgba(70, 73, 116, 0.7);
+  position: relative;
 }
 
 .crearCuentah1 {
@@ -90,9 +91,10 @@ body {
   justify-content: space-between;
   height: 100%;
   font-size: 1.25rem;
-
+  
   flex-direction: column;
   width: 70%;
+  margin-top: 120px;
 }
 
 input {
@@ -130,6 +132,10 @@ input.error {
   font-size: 2rem;
   box-shadow: 0 9px #999;
   border-radius: 15px;
+  position: absolute;
+  bottom: 30px;
+  left: 25%;
+right: 25%;
 }
 
 .botonCrear:hover {
@@ -178,6 +184,8 @@ input.error {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position:absolute;
+  margin-bottom: 20px;
 }
 
 .loggedIn {
@@ -187,6 +195,8 @@ input.error {
   justify-content: center;
   font-size: 2rem;
   color: #04aa6d;
+  position: absolute;
+  top: 0;
 }
 
 .hidden {

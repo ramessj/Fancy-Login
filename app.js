@@ -15,44 +15,20 @@ let textoDer = document.getElementById("textoDer");
 let loggedIn = document.getElementById("loggedIn");
 let nombre = document.getElementById("nombre");
 
-let smallPass = document.querySelectorAll(".smallPass");
 
-const checkPasswd = () => {
-  let password1 = document.getElementById("passwd").value;
-  let password2 = document.getElementById("passwd2").value;
-  if (password1 === password2) {
-    return true;
-  } else {
-    return false;
-  }
-};
 
-const submitButton = document.getElementById("submit");
-submitButton.addEventListener("click", (e) => {
+
+form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let pass = checkPasswd();
-
-  if (pass) {
-    form.classList.add("hidden");
+  
+      form.classList.add("hidden");
     textoDer.classList.add("hidden");
 
     loggedIn.innerHTML = `Bienvenido ${nombre.value}`;
     loggedIn.classList.remove("hidden");
-  } else {
-    
-    smallPass.forEach((small) =>{
-      
-      small.innerHTML = "Las contraseñas deben coincidir";
-      small.classList.add("bounce");
-      small.classList.add("smallError");
-      
-      setTimeout(function() {        
-        small.classList.remove("bounce");
-      }, 1000); 
-    } 
-    ); 
+  
 
    
-  }
+  
 });
